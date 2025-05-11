@@ -7,9 +7,9 @@ export const loaderAnimation = [
 ]
 
 export const LINKS = {
-  github: 'https://github.com/bue221',
-  linkedin: 'https://www.linkedin.com/in/bue221/',
-  mail: 'mailto:camiloplaza3@gmail.com',
+  github: 'https://github.com/utkarsh-vaishnav',
+  linkedin: 'https://www.linkedin.com/in/utkarshvaishnav11/',
+  mail: 'mailto:utkarshsv93@gmail.com',
   instagram: 'https://www.instagram.com/caj_ink/',
   medium: 'https://ladvace.medium.com/',
   discord: 'https://discordapp.com/users/163300027618295808',
@@ -83,11 +83,11 @@ export const STUDIES = [
 
 export const EXPERIENCE = [
   {
-    company: 'Straico',
-    location: 'Bogotá D C, Colombia',
-    position: 'Software Engineer',
-    start: '2021',
-    link: 'https://straico.com/',
+    company: 'Virtual Heights IT Services Pvt. Ltd.',
+    location: 'Ahmedabad',
+    position: 'Full stack Blockchain Developer',
+    start: '2023',
+    link: '',
     end: 'Current',
     tasks: [
       'Integration IA services with react and tailwind css',
@@ -95,12 +95,12 @@ export const EXPERIENCE = [
     ],
   },
   {
-    company: 'Spot2',
-    location: 'Mexico City, Mexico',
-    position: 'Software Engineer',
-    link: 'https://spot2.mx/',
-    start: '2021',
-    end: 'Current',
+    company: 'Azeedo Pvt Ltd.',
+    location: 'Ahmedabad',
+    position: 'Creative Director',
+    link: '',
+    start: '2019',
+    end: '2022',
     tasks: [
       'Development of the Spot2 platform with the use of React, Redux, and Material UI',
       'Development map with the use of Google Maps API',
@@ -109,52 +109,29 @@ export const EXPERIENCE = [
     ],
   },
   {
-    company: 'Imaginamos',
-    link: 'https://imaginamos.com/',
-    location: 'Bogotá D C, Colombia',
-    position: 'Frontend developer',
-    start: '2021',
-    end: '2021',
+    company: 'FanVein',
+    link: '',
+    location: 'Ahmedabad',
+    position: 'Startup Founder',
+    start: '2020',
+    end: '2022',
     tasks: [
       'Development of the Imaginamos platform with the use of React, Redux, and Material UI',
       'Work in ETB project with the use of React, Redux, and Material UI',
     ],
   },
   {
-    company: 'INETUM',
-    location: 'Bogotá D C, Colombia',
-    position: 'Frontend developer',
-    start: '2021',
-    link: 'https://www.inetum.com/es',
-    end: '2021',
+    company: 'Texworks Tessile Pvt. Ltd.',
+    location: 'Ahmedabad',
+    position: 'BDE intern',
+    start: '2019',
+    link: '',
+    end: '2019',
     tasks: [
       'Support in the QA area and bug review',
       'Use of SCRUM methodology',
       'Claro projects with the use of frameworks and libraries such as react and angular',
       'Use of redux toolkit as aproposal which allowed a shorter development time when using this tool',
-    ],
-  },
-  {
-    company: 'S I G',
-    location: 'Bogotá D C, Colombia',
-    position: 'Software developer',
-    start: '2021',
-    end: '2021',
-    tasks: [
-      'Development of a dashboard with react admin and chartjs for managing and entering information',
-    ],
-  },
-  {
-    company: 'BOOKII',
-    location: 'Bogotá D C, Colombia',
-    position: 'Software developer',
-    start: '2019',
-    end: '2021',
-    tasks: [
-      'Productive collaborationwiththebackendteamforthecreationofthe conversationalclubs',
-      'Effective coding of conversational clubs following design guide lines and using the Redux statemanager',
-      'Creation of the Bookii page in Spanish and change of texts in cms',
-      'Generation of static posts using Gatsby and the Contentful cms for the Bookii blog',
     ],
   },
 ]

@@ -10,6 +10,8 @@ import CVCard from '../components/sections/CVCard.astro'
 import ExperienceCard from '../components/sections/ExperienceCard.astro'
 import TattooCard from '../components/sections/TattooCard.astro'
 import StudyCard from '../components/sections/StudyCard.astro'
+import FooterMe from '../components/sections/FooterMe.astro'
+import Certifications from '../components/sections/Certifications.astro'
 //
 import { motion, AnimatePresence } from 'framer-motion'
 ---
@@ -38,8 +40,8 @@ import { motion, AnimatePresence } from 'framer-motion'
 </script>
 
 <BaseLayout
-  title="Andrés Plaza - Full Stack Developer"
-  description="Andrés Plaza - Full Stack Developer - Portfolio, Projects, CV, About Me, Contact, Timezone, Now, Experience, Tattoo, Study"
+  title="Utkarsh Vaishnav - Blockchain Developer"
+  description="Utkarsh Vaishnav - A full stack blockchain developer working with EVM and non-EVM chain."
 >
   <div
     slot="loader"
@@ -57,21 +59,25 @@ import { motion, AnimatePresence } from 'framer-motion'
       colSpan="md:col-span-1"
       rowSpan="md:row-span-2"
       title="Portfolio & Projects"
-      href="/portfolio"
+      href="/projects"
     />
     <TimeZoneCard />
+    <Certifications />
     <ContactsCard />
     <ExperienceCard />
     <Card colSpan="md:col-span-1" rowSpan="md:row-span-1">
-      <div class="flex h-full flex-col justify-between">
-        <blockquote class="mt-6 border-l-2 pl-6 italic">
-          “Anything one man can imagine, other men can make real.”
+      <div class="flex h-full flex-col">
+        <blockquote class="mt-6 border-l-2 pl-6 italic text-sm">
+          “The blockchain is the technology of the future, and it will fundamentally change the way we interact with the digital world.”
         </blockquote>
-        <p class="mt-2 text-xs">- Jules Verne</p>
+        <p class="mt-4 ml-20 text-xs text-right">- Satoshi Nakamoto</p>
+        <p class="mt-3 ml-20 text-right text-xs">Bitcoin creator</p>
       </div>
     </Card>
-    <TattooCard />
     <StudyCard />
+    <TattooCard />
+    <FooterMe />
+
     <!-- <Card colSpan="md:col-span-1" rowSpan="md:row-span-1">
       <p class="text-xs">
         © 2023 · Crafted with ♥️ using <a
