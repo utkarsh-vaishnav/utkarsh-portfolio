@@ -1,28 +1,24 @@
 ---
-import Card from '../Card.astro'
-import { LINKS } from '../../lib/constants'
+import Card from '../Card.astro';
+
+const colors = [
+  { name: 'Red', hex: '#FF0000' },
+  { name: 'Yellow', hex: '#FFFF00' },
+  { name: 'Green', hex: '#008000' },
+  { name: 'Blue', hex: '#0000FF' },
+];
 ---
 
-<Card
-  colSpan="md:col-span-1"
-  rowSpan="md:row-span-2"
-  title="Instagram tattoo"
-  href={LINKS.instagram}
->
-  <div class="flex h-full w-full flex-col">
-    <div>
-      <img
-        width="50"
-        height="50"
-        src="/me_tattoo.png"
-        class="pointer-events-none absolute bottom-[-20px] right-[-110px] z-[-1] max-h-[300px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:opacity-100"
-        alt="memoji of andres with a tattoo on his arm"
-      />
-    </div>
-    <div>
-      <p class="mt-2 text-sm text-muted-foreground">
-        If you want to see my tattoo's, you can follow me on Instagram.
-      </p>
-    </div>
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-1" title="Choose a Color">
+  <div class="class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0""></div>
+
+  <div class="flex gap-4 justify-center items-center p-4">
+    {colors.map((color) => (
+      <div 
+        class="w-10 h-10 rounded-full cursor-pointer border-4 transition-all"
+        style={`background-color: ${color.hex}; border-color: transparent;`}
+        onClick={`this.style.borderColor = '${color.hex}'`}
+      ></div>
+    ))}
   </div>
 </Card>

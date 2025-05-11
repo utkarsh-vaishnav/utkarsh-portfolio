@@ -1,17 +1,18 @@
 ---
 import Card from '../Card.astro'
-import { Badge } from '../ui/badge'
 import { STUDIES } from '../../lib/constants'
 ---
 
-<Card colSpan="md:col-span-1" rowSpan="md:row-span-1" title="Study">
-  <div class="mt-2 flex w-full flex-wrap items-center justify-center gap-2">
-    {
-      STUDIES.map((study) => (
-        <a href={study.link} target="__blank">
-          <Badge variant="outline">{study.institution}</Badge>
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-2" title="Education">
+  <div class="border-b border-gray-300 dark:border-gray-700 my-2"></div>
+
+  <div class="flex h-full w-full flex-col justify-start items-start gap-2 p-4">
+    {STUDIES.map((study) => (
+        <a href="" target="_blank">
+          <p class="text-lg font-semibold">{study.institution}</p>
+          <p class="text-sm text-muted-foreground">{study.title}</p>
+          <p class="text-xs text-gray-500">{study.date}</p>
         </a>
-      ))
-    }
+    ))}
   </div>
 </Card>
